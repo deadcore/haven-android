@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_onboarding"
+    android:gravity="center_horizontal|bottom"
+    android:orientation="vertical"
+    android:paddingBottom="23dp"
+    android:scaleType="centerCrop"
+    tools:context="hackergames.resilientplc.com.hackergamesapp.onboarding.OnboardingActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_haven"
+        android:layout_marginBottom="265dp"
+        android:tint="@color/white"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="Roboto"
+        android:text="I am a..."
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/military_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/onboarding_button_background"
+        android:fontFamily="Roboto"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:text="UK MILITARY MEMBER"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/professional_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/onboarding_button_background"
+        android:fontFamily="Roboto"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:text="SUPPORT PROFESSIONAL"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

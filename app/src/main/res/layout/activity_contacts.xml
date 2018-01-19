@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hackergames.resilientplc.com.hackergamesapp.contacts.ContactsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E9F6F9"
+        android:minHeight="80dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="Roboto"
+            android:text="@string/header_text"
+            android:textColor="#8F000000"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="Roboto"
+        android:text="Availabe now"
+        android:textColor="#DE000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <View
+                android:id="@+id/dot"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dot"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Roboto"
+                android:textColor="#8A000000"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/dot"
+                android:textSize="16sp"
+                android:text="Kyle" />
+
+
+            <ImageView
+                android:id="@+id/message"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toLeftOf="@id/phone"
+                android:tint="@color/colorAccent"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_message" />
+
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_phone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <View
+                android:id="@+id/dot2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dot"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Roboto"
+                android:textColor="#8A000000"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/dot2"
+                android:textSize="16sp"
+                android:text="John" />
+
+
+            <ImageView
+                android:id="@+id/message2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toLeftOf="@id/phone2"
+                android:tint="@color/colorAccent"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_message" />
+
+            <ImageView
+                android:id="@+id/phone2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_phone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical">
+
+            <View
+                android:id="@+id/dot3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/dot"
+                android:layout_alignParentStart="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="Roboto"
+                android:textColor="#8A000000"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/dot3"
+                android:textSize="16sp"
+                android:text="Sam" />
+
+
+            <ImageView
+                android:id="@+id/message3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_toLeftOf="@id/phone3"
+                android:tint="@color/colorAccent"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_message" />
+
+            <ImageView
+                android:id="@+id/phone3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="@color/colorAccent"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_phone" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

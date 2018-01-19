@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="SelectableRowView">
+        <attr name="row_text" format="string"/>
+    </declare-styleable>
+</resources>

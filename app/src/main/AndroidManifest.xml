@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hackergames.resilientplc.com.hackergamesapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".HackersGameApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".chat.ChatActivity"
+            android:theme="@style/AppThemeActionbar2"/>
+        <activity android:name=".onboarding.OnboardingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".signup.SignupActivity"
+            android:label=""
+            android:theme="@style/AppThemeActionbar" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppThemeActionbar2" />
+        <activity android:name=".LoadingActivity" />
+        <activity
+            android:name=".filter.FilterMilitaryActivity"
+            android:theme="@style/AppThemeActionbar2" />
+        <activity
+            android:name=".filter.FilterProfessionalActivity"
+            android:theme="@style/AppThemeActionbar2" />
+        <activity android:name=".contacts.ContactsActivity"
+            android:theme="@style/AppThemeActionbar2"></activity>
+    </application>
+
+</manifest>

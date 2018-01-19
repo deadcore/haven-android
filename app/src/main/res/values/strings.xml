@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">H.A.V.E.N</string>
+    <string name="title_activity_signup">SignupActivity</string>
+
+    <string name="header_text">I want to talk to a <b>SUPPORT PROFESSIONAL</b> about \n<b>FINANCIAL HELP</b></string>
+
+</resources>

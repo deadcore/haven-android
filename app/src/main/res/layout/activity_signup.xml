@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="hackergames.resilientplc.com.hackergamesapp.signup.SignupActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:text="Sign up"
+        android:textColor="#8A000000"
+        android:fontFamily="Roboto"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#8A000000"
+        android:text="Please enter your UK Military member details below"
+        android:fontFamily="Roboto"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/plain_text_input"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Full name"
+        android:textColor="#DE000000"
+        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="Roboto"
+        android:inputType="text"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:hint="Email Address"
+        android:layout_marginTop="30dp"
+
+        android:textSize="16sp"
+        android:fontFamily="Roboto"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:hint="Organisation"
+        android:textSize="16sp"
+        android:fontFamily="Roboto"
+        android:inputType="text"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:fontFamily="Roboto"
+            android:textColor="#8A000000"
+            android:textSize="14sp"
+            android:text="LOGIN"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="Roboto"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:text="SIGN UP"
+            android:background="@drawable/signup_button_background"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

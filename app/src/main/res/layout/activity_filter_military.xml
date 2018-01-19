@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hackergames.resilientplc.com.hackergamesapp.filter.FilterMilitaryActivity"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I want to talk to a..."
+                    android:fontFamily="Roboto"
+                    android:textSize="16sp"
+                    android:textColor="#DE1D212C">
+                </TextView>
+
+                <hackergames.resilientplc.com.hackergamesapp.filter.SelectableRowView
+                    android:id="@+id/select_veteran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:row_text="Fellow military member"/>
+
+                <hackergames.resilientplc.com.hackergamesapp.filter.SelectableRowView
+                    android:id="@+id/select_professional"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:row_text="Support professional "/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_marginTop="36dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="I want to talk about..."
+                    android:fontFamily="Roboto"
+                    android:textSize="16sp"
+                    android:textColor="#DE1D212C">
+
+                </TextView>
+
+                <hackergames.resilientplc.com.hackergamesapp.filter.SelectableRowView
+                    android:id="@+id/select_2_nothing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:row_text="Nothing in particular"/>
+
+                <hackergames.resilientplc.com.hackergamesapp.filter.SelectableRowView
+                    android:id="@+id/select_2_mental"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:row_text="Mental health"/>
+
+                <hackergames.resilientplc.com.hackergamesapp.filter.SelectableRowView
+                    android:id="@+id/select_2_financial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:row_text="Financial advice"/>
+
+                <hackergames.resilientplc.com.hackergamesapp.filter.SelectableRowView
+                    android:id="@+id/select_2_housing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:row_text="Housing"/>
+
+                <hackergames.resilientplc.com.hackergamesapp.filter.SelectableRowView
+                    android:id="@+id/select_2_drug_abuse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:row_text="Alcohol/drug abuse"/>
+
+                <hackergames.resilientplc.com.hackergamesapp.filter.SelectableRowView
+                    android:id="@+id/select_2_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:row_text="Finding a job "/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/ic_done"
+            android:visibility="gone"
+            app:layout_anchor="@id/main_container"
+            android:tint="@android:color/white"/>
+
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>
